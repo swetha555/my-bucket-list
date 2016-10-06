@@ -1,0 +1,33 @@
+<!doctype html> 
+
+<html lang="en" ng-app = "placesApp">
+<head>
+<meta charset="utf-8">
+<title>My Bucket List</title>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<script src="bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+</head>
+<body ng-controller = "placesListController">
+	<p>Everything is awesome here !!</p>
+	<ul>
+		<li ng-repeat="place in places">
+			<span>{{place.name}}</span>
+			<p>{{places.description}}</p>
+		</li>
+		<!-- <li>
+			<span>Chicago-IL</span>
+			<p>Home Town</p>
+		</li>
+		<li>
+		<span>Boston-MA</span>
+			<p>Maiden Town</p>
+		</li>
+		<li>
+		<span>Florida</span>
+			<p>Sunshine State</p>
+		</li> -->
+	</ul>
+	<p>Total number of Cities visited: {{places.length}}</p>
+</body>
+</html>

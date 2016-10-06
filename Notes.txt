@@ -1,0 +1,11 @@
+Notes
+
+ng-app directive is used to flag the HTML element that Angular should consider to be the root element of our application.
+
+There are 3 important things that happen during the bootstrap phase:
+1.The injector that will be used for dependency injection is created.
+2.The injector will then create the root scope that will become the context for the model of our application.
+3.Angular will then "compile" the DOM starting at the ngApp root element, processing any directives and bindings found along the way.
+
+
+
